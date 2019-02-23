@@ -1,0 +1,25 @@
+
+  html {
+    font size: 32px;
+  }
+  
+  ol {
+      display: flex;  /*putting all the elements in one line and squeezing them in a way to stay in the same line*/
+      flex-wrap: wrap; /* when there's no more space - flex-wrap, when space is too limited, send it to the next line*/
+
+  }
+
+  li 
+  {width: 100%
+}   /*we want on mobile the list item to have a full width - mobile-first perspective - this is default*/
+
+
+img {width: 100% } /*keep the width at 100% on the mobile-first*/
+
+  @media only screen and (min-device-width: 480px) /* this needs more explanation*/ {
+  
+html {font-size: 16px;} /*now when it goes to desktop - it defaults to this text size, smaller*/
+
+li { width: 50%;} /*This basically reduces the width of the image if its on desktop*/
+
+img {width:100px} 
